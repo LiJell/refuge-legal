@@ -90,7 +90,7 @@
 <section class="clause" id="ko-scope">
 <h2>3. 삭제되는 정보와 보관되는 정보</h2>
 <p>삭제 후 남는 정보는 아래에 원문 그대로 인용한 문구가 정한 범위뿐입니다. 앱의 계정 삭제 화면에 표시되는 안내:</p>
-<div class="quote">법령상 보존하는 감사로그는 5년간 남지만 계정 식별자는 가명 처리됩니다. 백업은 30일 이내에 삭제되고, SMS 인증 메타데이터는 90일 보관 후 삭제됩니다. AI 요청 내용은 Google이 55일간 보관합니다.</div>
+<div class="quote">법령상 보존하는 감사로그는 5년간 남지만 계정 식별자는 가명 처리됩니다. 백업은 30일 이내에 삭제되고, SMS 인증 메타데이터는 90일 보관 후 삭제됩니다. AI 요청 내용은 Google이 55일간 보관합니다. 삭제 직후 남은 세션이 데이터를 다시 만들지 못하도록 계정의 가명 표식을 최대 31일 보관합니다.</div>
 <p>개인정보 처리방침에서 수집 항목, 보유 기간, 제3자 제공을 정한 조항:</p>
 <div class="quote"><strong>1. 수집 항목 및 방법 (PIPA 제15조)</strong><br>계정(휴대전화번호·이메일·언어), 반려동물 정보(이름·종·체중·메모·사진), 일일 기록, 알림 토큰, AI 질의 메타(HMAC 해시), IP·UA 해시. 휴대전화번호는 SMS 인증으로 본인 확인하며, 이메일은 알림·복구 채널로 보관합니다.</div>
 <div class="quote"><strong>3. 보유 기간 (PIPA 제21조)</strong><br>탈퇴 시 즉시 파기(휴대전화번호·이메일·반려동물 정보 모두 포함). 단 감사로그(audit_log)는 5년 보존(PIPA 제29조). AI 응답 메타 1년 후 익명화.</div>
@@ -130,7 +130,7 @@
 <section class="clause" id="en-scope">
 <h2>3. What is deleted and what is kept</h2>
 <p>After deletion, nothing remains beyond what the wording quoted verbatim below allows. The notice shown on the app's account-deletion screen:</p>
-<div class="quote">Audit logs we must keep by law are retained for 5 years, and the account identifier is pseudonymised. Backups are purged within 30 days, and SMS verification metadata is kept 90 days then deleted. AI request content is retained by Google for 55 days.</div>
+<div class="quote">Audit logs we must keep by law are retained for 5 years, and the account identifier is pseudonymised. Backups are purged within 30 days, and SMS verification metadata is kept 90 days then deleted. AI request content is retained by Google for 55 days. A pseudonymised marker of the account is kept for up to 31 days so a leftover session cannot recreate data.</div>
 <p>The privacy policy clauses on collected data, retention and third parties:</p>
 <div class="quote"><strong>1. Data we collect</strong><br>Account (mobile phone number, email, language), pet (name, species, weight, notes, photo), daily logs, push token, AI query metadata (HMAC-hashed prompts/responses), IP/UA hashes. The phone number verifies identity via SMS; the email is kept for notifications and recovery.</div>
 <div class="quote"><strong>3. Retention</strong><br>Phone number, email, account, and pet data: deleted immediately upon account deletion. Audit log: 5 years (regulatory). AI metadata: 1 year then anonymized.</div>
