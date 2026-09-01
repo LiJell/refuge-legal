@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>개인정보 처리방침 (pet-app) / Privacy Policy (pet-app)</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --ink: #1f1d1a; --ink2: #4a4641; --ink3: #7a746c;
+    --bg: #faf8f4; --card: #ffffff; --line: #e6e1d8; --accent: #4f6f52;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #efe9df; --ink2: #c9c2b6; --ink3: #948c80;
+      --bg: #171512; --card: #211e1a; --line: #3a352e; --accent: #9dbb9f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+  nav.lang { display: flex; gap: .75rem; font-size: .9rem; margin-bottom: 1rem; }
+  nav.lang a {
+    color: var(--accent); text-decoration: none;
+    border: 1px solid var(--line); border-radius: 999px; padding: .2rem .75rem;
+  }
+  h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 .25rem; }
+  h2 { font-size: 1.05rem; margin: 0 0 .4rem; }
+  .meta { color: var(--ink3); font-size: .85rem; margin: 0 0 .75rem; }
+  .note, .footnote { color: var(--ink3); font-size: .85rem; font-style: italic; }
+  .clause {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: .9rem 1rem; margin: 0 0 .65rem;
+  }
+  .clause p { margin: 0 0 .5rem; color: var(--ink2); font-size: .95rem; }
+  .clause p:last-child { margin-bottom: 0; }
+  .quote {
+    border-left: 3px solid var(--accent); background: var(--bg);
+    padding: .5rem .75rem; margin: .5rem 0; border-radius: 6px;
+    color: var(--ink2); font-size: .92rem;
+  }
+  section.policy + section.policy {
+    margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  }
+  ul { padding-left: 1.2rem; margin: .25rem 0 .5rem; color: var(--ink2); font-size: .95rem; }
+  li { margin: .25rem 0; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  footer {
+    margin-top: 2.5rem; color: var(--ink3); font-size: .8rem;
+    border-top: 1px solid var(--line); padding-top: 1rem;
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="lang" aria-label="language"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a></nav>
+<section class="policy" id="ko" lang="ko">
+<h1>개인정보 처리방침 (pet-app)</h1>
+<p class="meta">최종 수정일: 2026-09-02</p>
+<p class="note">본 정책은 베타 W13 전 자체 점검 + GA 후 정식 법무 검토를 거치는 boilerplate입니다.</p>
+<section class="clause" id="ko-1">
+<h2>1. 수집 항목 및 방법 (PIPA 제15조)</h2>
+<p>계정(휴대전화번호·이메일·언어), 반려동물 정보(이름·종·체중·메모·사진), 일일 기록, 알림 토큰, AI 질의 메타(HMAC 해시), IP·UA 해시. 휴대전화번호는 SMS 인증으로 본인 확인하며, 이메일은 알림·복구 채널로 보관합니다.</p>
+</section>
+<section class="clause" id="ko-2">
+<h2>2. 이용 목적 (PIPA 제15조 제1항)</h2>
+<p>회원 인증·관리(SMS 인증을 통한 회원 가입·로그인 포함), 반려동물 기록 제공, 임계치 이탈 알림, AI 정보 제공(citation 포함), 침해 사고 대응(PIPA 제29조), 익명 통계.</p>
+</section>
+<section class="clause" id="ko-3">
+<h2>3. 보유 기간 (PIPA 제21조)</h2>
+<p>탈퇴 시 즉시 파기(휴대전화번호·이메일·반려동물 정보 모두 포함). 단 감사로그(audit_log)는 5년 보존(PIPA 제29조). AI 응답 메타 1년 후 익명화.</p>
+</section>
+<section class="clause" id="ko-4">
+<h2>4. 제3자 제공 (PIPA 제17조)</h2>
+<p>제공하지 않습니다. 단 AI 기능 사용 시(별도 동의 후) 아래 정보가 서버 프록시를 거쳐 Google LLC(Gemini Developer API, 소재지 미국)에 전송됩니다. AskAi는 질문 원문, 직전 대화 이력(최대 16개 메시지), 선택한 반려동물의 종, 종별 참고 기준값, 검색된 문헌 발췌를 전송하고, 추모 편지는 반려동물 이름과 종, 함께한 일수, 첫·마지막 기록일, 최고 기록 체중, 일일·체중 기록 수, 사진 수, 선택한 편지 언어와 말투, 보호자가 직접 쓴 마지막 인사를 전송하며, 생성된 편지가 너무 짧으면 같은 항목이 한 번 더 전송됩니다. 유료 Gemini Developer API의 비학습 조건이 적용되며, Google은 오남용과 정책 위반의 탐지·방지를 위해 55일간 보관합니다. 개별 요청이 실제로 처리되는 국가는 사전에 특정할 수 없습니다. RAG 임베딩도 같은 Google Gemini(gemini-embedding-001)를 사용하며 별도 수신자가 추가되지 않습니다. SMS 인증번호 발송 시 Twilio가 휴대전화번호를 일회성 전달용으로 수신. 법령에 의한 영장 시 예외.</p>
+</section>
+<section class="clause" id="ko-5">
+<h2>5. 위탁 (PIPA 제26조)</h2>
+<p>Supabase(데이터·인증·스토리지는 서울 리전, 서버 프록시도 서울 리전을 지정해 호출), Twilio(US, SMS 인증번호 발송), Google LLC(소재지 US, 실제 처리 국가 특정 불가, AI 응답 및 RAG 임베딩: 서버 프록시 경유, 별도 동의 후), Expo(EAS Build, US, 앱 빌드), GitHub(US, 코드).</p>
+</section>
+<section class="clause" id="ko-6">
+<h2>6. 안전성 확보 조치 (PIPA 제29조)</h2>
+<p>TLS 1.3, AES-256(저장), Row-Level Security, HMAC-SHA256(audit_log 해시), 사진 24시간 한정 signed URL, audit_log append-only.</p>
+</section>
+<section class="clause" id="ko-7">
+<h2>7. 정보주체 권리 (PIPA 제35-37조)</h2>
+<p>본 앱 설정 메뉴에서 열람(JSON/CSV/PDF export), 정정·삭제, 처리 정지, 회원 탈퇴 가능. 침해 신고: 개인정보분쟁조정위원회 1833-6972.</p>
+</section>
+<section class="clause" id="ko-8">
+<h2>8. 개인정보 보호책임자</h2>
+<p>TBD (GA 전 결정). 문의: hanjukim0922@gmail.com.</p>
+</section>
+<p class="footnote">본 처리방침이 변경되는 경우 앱 내 공지 + 이메일로 사전 안내합니다 (중대 변경 시 7일 전).</p>
+<p class="meta"><a href="./account-deletion.html#ko">계정 삭제 요청 안내</a></p>
+</section>
+<section class="policy" id="en" lang="en">
+<h1>Privacy Policy (pet-app)</h1>
+<p class="meta">Last updated: 2026-09-02</p>
+<p class="note">Boilerplate based on Korean PIPA. Will be supplemented with GDPR/CCPA terms before English-region launch.</p>
+<section class="clause" id="en-1">
+<h2>1. Data we collect</h2>
+<p>Account (mobile phone number, email, language), pet (name, species, weight, notes, photo), daily logs, push token, AI query metadata (HMAC-hashed prompts/responses), IP/UA hashes. The phone number verifies identity via SMS; the email is kept for notifications and recovery.</p>
+</section>
+<section class="clause" id="en-2">
+<h2>2. How we use it</h2>
+<p>Authenticate users (including SMS-based sign-up and sign-in), store pet records, generate threshold-deviation alerts, deliver AI responses with citations, audit security events, anonymous analytics.</p>
+</section>
+<section class="clause" id="en-3">
+<h2>3. Retention</h2>
+<p>Phone number, email, account, and pet data: deleted immediately upon account deletion. Audit log: 5 years (regulatory). AI metadata: 1 year then anonymized.</p>
+</section>
+<section class="clause" id="en-4">
+<h2>4. Third parties</h2>
+<p>We do not sell or share data. With your separate consent, the following is routed through our server proxy to Google LLC (Gemini Developer API, located in the US) under non-training terms. AskAi sends your question as written, recent conversation history (up to 16 messages), the selected pet's species, species reference values, and retrieved literature excerpts; memorial letters send the pet's name and species, days together, first and last log dates, highest recorded weight, counts of daily and weight logs, photo count, the letter language and tone you chose, and the farewell words you wrote; if the generated letter is too short the same data is sent once more. Under the paid Gemini Developer API terms this is not used to improve Google products, and Google retains it for 55 days to detect and prevent abuse and policy violations. The country in which an individual request is processed cannot be specified in advance. RAG embedding uses the same Google Gemini model (gemini-embedding-001), so it adds no further recipient. Twilio receives your phone number for one-time SMS verification delivery only. Law enforcement only via warrant.</p>
+</section>
+<section class="clause" id="en-5">
+<h2>5. Processors</h2>
+<p>Supabase (data, auth and storage in the Seoul region; the server proxy is invoked with the Seoul region specified), Twilio (US, SMS verification dispatch), Google LLC (located in the US, processing country not specified in advance; AI responses and RAG embedding via our server proxy, after separate consent), Expo (EAS Build, US), GitHub (US, code only).</p>
+</section>
+<section class="clause" id="en-6">
+<h2>6. Security measures</h2>
+<p>TLS 1.3, AES-256 at rest, Row-Level Security, HMAC-SHA256 audit hashing, 24h signed URLs for photos, append-only audit log.</p>
+</section>
+<section class="clause" id="en-7">
+<h2>7. Your rights</h2>
+<p>Export (JSON/CSV/PDF), correct, delete, sign out. Korean users can file with the Personal Information Dispute Mediation Committee (1833-6972).</p>
+</section>
+<section class="clause" id="en-8">
+<h2>8. Privacy contact</h2>
+<p>TBD before GA. Inquiries: hanjukim0922@gmail.com.</p>
+</section>
+<p class="footnote">We will notify you in-app and by email of any material changes (7 days in advance for material changes).</p>
+<p class="meta"><a href="./account-deletion.html#en">How to request account deletion</a></p>
+</section>
+<footer>앱 내 개인정보 처리방침과 동일한 문안에서 생성되었습니다. / Generated from the same text as the in-app privacy policy.</footer>
+</main>
+</body>
+</html>
