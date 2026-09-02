@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
-<title>개인정보 처리방침 (pet-app) / Privacy Policy (pet-app)</title>
+<title>개인정보 처리방침 (Refuge) / Privacy Policy (Refuge)</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -62,81 +62,81 @@
 <main>
 <nav class="lang" aria-label="language"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a></nav>
 <section class="policy" id="ko" lang="ko">
-<h1>개인정보 처리방침 (pet-app)</h1>
+<h1>개인정보 처리방침 (Refuge)</h1>
 <p class="meta">최종 수정일: 2026-09-02</p>
-<p class="note">본 정책은 베타 W13 전 자체 점검 + GA 후 정식 법무 검토를 거치는 boilerplate입니다.</p>
+<p class="note">Refuge(이하 앱)를 운영하는 운영자는 「개인정보 보호법」 제30조에 따라 이용자의 개인정보를 보호하고 관련 고충을 신속하게 처리하기 위해 이 개인정보 처리방침을 정하여 앱 설정 메뉴와 공개 페이지에 게시합니다. 시행일: 2026-09-02.</p>
 <section class="clause" id="ko-1">
 <h2>1. 수집 항목 및 방법 (PIPA 제15조)</h2>
-<p>계정(휴대전화번호·이메일·언어), 반려동물 정보(이름·종·체중·메모·사진), 일일 기록, 알림 토큰, AI 질의 메타(HMAC 해시), IP·UA 해시. 휴대전화번호는 SMS 인증으로 본인 확인하며, 이메일은 알림·복구 채널로 보관합니다.</p>
+<p>가입·로그인: 휴대전화 인증으로 가입하면 휴대전화번호(SMS 인증번호로 본인 확인)를, Google 계정으로 로그인하면 Google이 전달하는 계정 식별자·이메일·이름·프로필 사진 URL을 인증 서비스가 저장합니다(앱은 이 중 이메일만 사용). 이메일과 닉네임은 프로필 완성 시 필수로 입력받으며, 이메일은 내보내기 파일의 계정 표시와 탈퇴 시 이전 초대 주소 대조에 쓰입니다. 반려동물 정보(이름·종·체중·메모·사진), 사육장 정보, 일일 기록, AI 질의 메타(HMAC 해시). 지원 문의: 문의 분류, 회신 이메일, 메시지, 첨부 사진(선택), 진단 로그 함께 보내기 옵션을 켠 경우 최근 앱 동작 로그(최대 30KB)와 기기 모델·OS 버전·앱 버전·로케일. 전송을 누르면 서버 저장을 요청하고, 메시지와 일부 기기 정보를 요약한 메일 초안을 8절 주소로 열며 실제 발송 여부는 이용자가 정합니다. 반려동물 이전: 서버가 만든 초대 토큰, 이전할 항목 선택, 보내는 분이 입력한 수신자 이메일(선택, 표시용). 초대는 생성 후 24시간이 지나면 만료됩니다. 자동 생성 정보: 로그인 세션마다 인증 시스템(Supabase Auth)이 접속 IP 주소와 기기 User-Agent를 기록하며, 로그아웃하면 세션을 종료하고 계정을 삭제하면 세션 기록도 함께 삭제됩니다. 감사로그에는 IP 주소나 기기 식별 정보를 기록하지 않습니다. 앱 업데이트 확인: 앱 실행 시 업데이트 확인을 위해 설치 단위 식별자와 앱 버전 정보가 Expo 업데이트 서버(미국)로 전송됩니다. 기록 리마인더는 기기 안에서만 예약되는 로컬 알림이며 운영 서버에는 푸시 토큰을 저장하지 않습니다. 이 앱은 만 14세 이상을 대상으로 하며 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
 </section>
 <section class="clause" id="ko-2">
 <h2>2. 이용 목적 (PIPA 제15조 제1항)</h2>
-<p>회원 인증·관리(SMS 인증을 통한 회원 가입·로그인 포함), 반려동물 기록 제공, 임계치 이탈 알림, AI 정보 제공(citation 포함), 침해 사고 대응(PIPA 제29조), 익명 통계.</p>
+<p>회원 가입·로그인과 본인 확인(휴대전화 SMS 인증, Google 계정 로그인), 반려동물·사육장·일일 기록 기능 제공, 기록 리마인더(기기 내 알림), 별도 동의 후 AI 정보 제공(문헌 인용 포함)과 추모 편지 생성, AI 이용량 관리(일별 한도), 반려동물 기록을 다른 이용자에게 이전, 데이터 내보내기(JSON/CSV/PDF), 지원 문의 응대와 오류 진단, 계정 삭제 처리, 보안 사고 대응과 동의·철회 사실 입증(감사로그, PIPA 제29조). 통계·분석 도구는 사용하지 않습니다.</p>
 </section>
 <section class="clause" id="ko-3">
 <h2>3. 보유 기간 (PIPA 제21조)</h2>
-<p>탈퇴 시 즉시 파기(휴대전화번호·이메일·반려동물 정보 모두 포함). 단 감사로그(audit_log)는 5년 보존(PIPA 제29조)하되 계정 식별자는 가명 처리, 삭제 직후 남은 세션의 데이터 재생성을 막기 위한 계정 가명 표식은 최대 31일 보관 후 삭제. AI 응답 메타 1년 후 익명화.</p>
+<p>탈퇴 시 즉시 파기(휴대전화번호·이메일·반려동물 정보 모두 포함). 단 감사로그(audit_log)는 보안 사고 대응과 동의·철회 사실 입증을 위해 운영자가 정한 보유 기간인 5년간 보존(법령상 의무 보존 기간은 아님)하되 계정 식별자는 가명 처리, 삭제 직후 남은 세션의 데이터 재생성을 막기 위한 계정 가명 표식은 최대 31일 보관 후 삭제. 다른 이용자가 회원님의 이메일 주소로 보낸, 아직 수락하지 않은 이전 초대가 있으면 그 주소는 탈퇴 시 자동 삭제 대상에서 제외됩니다(수신 계정으로 연결되기 전에는 주소만으로 본인 소유를 확정할 수 없기 때문이며, 이메일 확인 여부와 무관하게 적용됩니다). 해당 주소는 초대가 만료(생성 후 24시간)되거나 취소·거절되면 하루 안에 정기 정리로 삭제됩니다. AI 질문·응답은 원문이 아닌 HMAC 해시로만 감사로그에 남고 위 보존 기준을 따르며 별도의 익명화 일정은 없습니다. 다만 이용자가 AskAi 답변의 「개체 기록에 저장」을 선택하면 질문과 답변 원문이 해당 반려동물의 일일 기록 메모에 저장되어 일일 기록과 같은 기준으로 보관·삭제됩니다. 수탁자가 보관하는 백업 사본과 SMS 발송 기록은 각 수탁자의 보존 기간이 끝나야 사라지며 운영자가 즉시 지울 수 없습니다.</p>
 </section>
 <section class="clause" id="ko-4">
 <h2>4. 제3자 제공 (PIPA 제17조)</h2>
-<p>제공하지 않습니다. 단 AI 기능 사용 시(별도 동의 후) 아래 정보가 서버 프록시를 거쳐 Google LLC(Gemini Developer API, 소재지 미국)에 전송됩니다. AskAi는 질문 원문, 직전 대화 이력(최대 16개 메시지), 선택한 반려동물의 종, 종별 참고 기준값, 검색된 문헌 발췌를 전송하고, 추모 편지는 반려동물 이름과 종, 함께한 일수, 첫·마지막 기록일, 최고 기록 체중, 일일·체중 기록 수, 사진 수, 선택한 편지 언어와 말투, 보호자가 직접 쓴 마지막 인사를 전송하며, 생성된 편지가 너무 짧으면 같은 항목이 한 번 더 전송됩니다. 유료 Gemini Developer API의 비학습 조건이 적용되며, Google은 오남용과 정책 위반의 탐지·방지를 위해 55일간 보관합니다. 개별 요청이 실제로 처리되는 국가는 사전에 특정할 수 없습니다. RAG 임베딩도 같은 Google Gemini(gemini-embedding-001)를 사용하며 별도 수신자가 추가되지 않습니다. SMS 인증번호 발송 시 Twilio가 휴대전화번호를 일회성 전달용으로 수신. 법령에 의한 영장 시 예외.</p>
+<p>제공하지 않습니다. 단 AI 기능 사용 시(별도 동의 후) 아래 정보가 서버 프록시를 거쳐 Google LLC(Gemini Developer API, 소재지 미국)에 전송됩니다. AskAi는 질문 원문, 직전 대화 이력(최대 16개 메시지), 선택한 반려동물의 종, 종별 참고 기준값, 검색된 문헌 발췌를 전송하고, 추모 편지는 반려동물 이름과 종, 함께한 일수, 첫·마지막 기록일, 최고 기록 체중, 일일·체중 기록 수, 사진 수, 선택한 편지 언어와 말투, 보호자가 직접 쓴 마지막 인사를 전송하며, 생성된 편지가 너무 짧으면 같은 항목이 한 번 더 전송됩니다. 유료 Gemini Developer API의 비학습 조건이 적용되며, Google은 오남용과 정책 위반의 탐지·방지를 위해 55일간 보관합니다. 개별 요청이 실제로 처리되는 국가는 사전에 특정할 수 없습니다. RAG 임베딩도 같은 Google Gemini(gemini-embedding-001)를 사용하며 별도 수신자가 추가되지 않습니다. 이 국외 이전의 근거는 「개인정보 보호법」 제28조의8 제1항 제1호(별도 동의)이고, 이전 시기와 방법은 AI 기능을 사용할 때마다 서버 프록시를 거친 암호화 전송입니다. 이전받는 자의 연락처: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA(개인정보 문의는 Google 개인정보처리방침의 문의 창구). AI 기능을 처음 쓸 때 표시되는 동의 화면에서 국외 이전을 거부할 수 있고, 동의하지 않거나 철회해도 AI 기능 외의 앱 기능은 그대로 이용할 수 있으며, 철회는 설정의 AI 국외 이전 동의 항목에서 언제든 할 수 있습니다. SMS 인증번호 발송 시 Twilio가 휴대전화번호를 일회성 전달용으로 수신. 법령에 의한 영장 시 예외.</p>
 </section>
 <section class="clause" id="ko-5">
 <h2>5. 위탁 (PIPA 제26조)</h2>
-<p>Supabase(데이터·인증·스토리지는 서울 리전, 서버 프록시도 서울 리전을 지정해 호출), Twilio(US, SMS 인증번호 발송), Google LLC(소재지 US, 실제 처리 국가 특정 불가, AI 응답 및 RAG 임베딩: 서버 프록시 경유, 별도 동의 후), Expo(EAS Build, US, 앱 빌드), GitHub(US, 코드).</p>
+<p>운영자는 다음 수탁자에게 처리 업무를 위탁합니다. Supabase, Inc.(미국 법인, privacy@supabase.com): 데이터베이스·인증·파일 저장소·서버 프록시 운영. 이전 항목은 1절의 개인정보 중 앱 업데이트 확인 항목을 제외한 전부이며, 대한민국 서울 리전에 저장하고 서버 프록시도 서울 리전을 지정해 호출하며, 앱을 사용할 때마다 암호화된 연결로 처리됩니다. 보유 기간은 3절과 같습니다. 저장과 기본 처리는 국내 리전에서 이루어지지만 국외 사업자의 장애 대응 등 국외에서의 접근도 처리에 해당할 수 있어 「개인정보 보호법」 제28조의8 제1항 제3호(정보주체와의 계약 이행을 위한 처리 위탁·보관)를 근거로 기재합니다. Twilio Inc.(미국, privacy@twilio.com): 가입·로그인 시 SMS 인증번호 발송. 이전 항목은 휴대전화번호이며 발송 시점에 암호화된 API 호출로 전송되고(근거: 같은 조 제1항 제3호), 이용 기간은 발송 완료 시까지이며, Twilio가 보관하는 발송 기록은 운영자와의 위탁 계약이 끝나면 30일 이내에 자동 삭제됩니다(Twilio 데이터 처리 부속서). 그 전의 보관 기준은 Twilio 개인정보처리방침에 공개되어 있습니다. Expo(650 Industries, Inc., 미국, 문의 폼 expo.dev/contact): 앱 빌드와 앱 업데이트 확인 서버 운영. 이전 항목은 설치 단위 식별자와 앱 버전 정보이며 앱 실행 시 암호화된 요청으로 전송되고(근거: 같은 조 제1항 제3호), 이용 기간은 업데이트 확인 응답 시까지이며, 요청 기록의 보관 기간은 Expo 개인정보처리방침에 공개된 기준에 따르고 운영자는 별도 사본을 보관하지 않습니다. 거부 방법과 효과: Supabase 처리를 원하지 않으면 서비스를 이용할 수 없으므로 회원 탈퇴로 처리를 중단할 수 있습니다. Twilio로의 전송은 휴대전화 인증 대신 Google 계정 로그인을 쓰면 일어나지 않습니다. Expo로의 전송은 앱을 실행할 때마다 자동으로 일어나므로 원하지 않으면 앱을 삭제해야 하며 회원 탈퇴만으로는 멈추지 않습니다. Google LLC로의 이전은 4절에 적었습니다. GitHub(미국)에는 소스 코드만 있고 이용자 개인정보는 없습니다.</p>
 </section>
 <section class="clause" id="ko-6">
 <h2>6. 안전성 확보 조치 (PIPA 제29조)</h2>
-<p>TLS 1.3, AES-256(저장), Row-Level Security, HMAC-SHA256(audit_log 해시), 사진 24시간 한정 signed URL, audit_log append-only.</p>
+<p>전송 구간 TLS 암호화, 저장 데이터 암호화(수탁자 Supabase 인프라), Row-Level Security, HMAC-SHA256(audit_log 해시), 사진은 1시간 한정 signed URL로만 열람, audit_log append-only.</p>
 </section>
 <section class="clause" id="ko-7">
 <h2>7. 정보주체 권리 (PIPA 제35-37조)</h2>
-<p>본 앱 설정 메뉴에서 열람(JSON/CSV/PDF export), 정정·삭제, 처리 정지, 회원 탈퇴 가능. 침해 신고: 개인정보분쟁조정위원회 1833-6972.</p>
+<p>앱에서는 설정의 데이터 내보내기(JSON/CSV/PDF)로 열람, 반려동물 정보의 정정·삭제와 일일 기록의 삭제, 설정의 AI 국외 이전 동의 철회, 회원 탈퇴를 직접 할 수 있습니다. 그 밖의 열람·정정·삭제·처리 정지 청구는 8절 이메일로 할 수 있으며 본인 확인 후 지체 없이 처리합니다. 침해 신고: 개인정보분쟁조정위원회 1833-6972.</p>
 </section>
 <section class="clause" id="ko-8">
 <h2>8. 개인정보 보호책임자</h2>
-<p>TBD (GA 전 결정). 문의: hanjukim0922@gmail.com.</p>
+<p>개인정보 보호책임자 및 담당: Refuge 운영자(운영자가 직접 담당하며 별도 부서는 없습니다). 개인정보 관련 문의, 열람·정정·삭제·처리 정지 요청, 동의 철회, 고충 처리는 다음 이메일로 보내 주시면 지체 없이 답변합니다. 이메일: hanjukim0922@gmail.com</p>
 </section>
-<p class="footnote">본 처리방침이 변경되는 경우 앱 내 공지 + 이메일로 사전 안내합니다 (중대 변경 시 7일 전).</p>
+<p class="footnote">이 방침은 2026-09-02부터 적용됩니다. 방침을 변경할 때는 시행 7일 전부터 앱 내 공지와 공개 페이지에 변경 내용과 시행일을 게시합니다.</p>
 <p class="meta"><a href="./account-deletion.html#ko">계정 삭제 요청 안내</a></p>
 </section>
 <section class="policy" id="en" lang="en">
-<h1>Privacy Policy (pet-app)</h1>
+<h1>Privacy Policy (Refuge)</h1>
 <p class="meta">Last updated: 2026-09-02</p>
-<p class="note">Boilerplate based on Korean PIPA. Will be supplemented with GDPR/CCPA terms before English-region launch.</p>
+<p class="note">The operator of Refuge (the app) sets this privacy policy under Article 30 of the Personal Information Protection Act of Korea to protect user personal data and handle related complaints promptly, and publishes it in the app Settings menu and on a public web page. Effective: 2026-09-02.</p>
 <section class="clause" id="en-1">
 <h2>1. Data we collect</h2>
-<p>Account (mobile phone number, email, language), pet (name, species, weight, notes, photo), daily logs, push token, AI query metadata (HMAC-hashed prompts/responses), IP/UA hashes. The phone number verifies identity via SMS; the email is kept for notifications and recovery.</p>
+<p>Sign-up and sign-in: if you sign up by phone, the authentication service stores your phone number (verified with an SMS code); if you sign in with Google, it stores the account identifier, email, name and profile picture URL that Google passes on (the app uses only the email). Email and nickname are required when you complete your profile; the email labels your export file and is matched against pending transfer invitations when you delete your account. Pet data (name, species, weight, notes, photo), enclosure data, daily logs, AI query metadata (HMAC hashes). Support requests: category, reply email, message, an optional photo and, if you turn on the diagnostic log option, recent app logs (up to 30KB) plus device model, OS version, app version and locale. Pressing send asks the server to store the request and opens a mail draft to the email in section 8 that summarises the message and some device details; whether it is sent is up to you. Pet transfers: a server-generated invitation token, the items you choose to transfer, and an optional recipient email typed by the sender (display only). Invitations expire 24 hours after creation. Automatically generated data: for every sign-in session the authentication system (Supabase Auth) records the connecting IP address and device User-Agent; signing out ends the session and deleting your account deletes the session records. The audit log records no IP address or device identifier. App update check: on launch, a per-installation identifier and app version data are sent to the Expo update server (US) to check for updates. Logging reminders are local notifications scheduled on your device; our servers store no push token. The app is intended for users aged 14 and over and we do not knowingly collect personal data from children under 14.</p>
 </section>
 <section class="clause" id="en-2">
 <h2>2. How we use it</h2>
-<p>Authenticate users (including SMS-based sign-up and sign-in), store pet records, generate threshold-deviation alerts, deliver AI responses with citations, audit security events, anonymous analytics.</p>
+<p>Sign-up, sign-in and identity verification (phone SMS code, Google sign-in); pet, enclosure and daily-log features; logging reminders (on-device notifications); AI answers with citations and memorial letters after your separate consent; AI usage limits (daily caps); transferring pet records to another user; data export (JSON/CSV/PDF); responding to support requests and diagnosing errors; processing account deletion; responding to security incidents and evidencing consent and withdrawal (audit log, PIPA Article 29). We run no analytics tooling.</p>
 </section>
 <section class="clause" id="en-3">
 <h2>3. Retention</h2>
-<p>Phone number, email, account, and pet data: deleted immediately upon account deletion. Audit log: 5 years (regulatory) with the account identifier pseudonymised. A pseudonymised account marker that stops leftover sessions from recreating data is kept for up to 31 days. AI metadata: 1 year then anonymized.</p>
+<p>Phone number, email, account, and pet data: deleted immediately upon account deletion. Audit log: 5 years, a retention period set by the operator for security incident response and proof of consent and withdrawal (not a statutory retention period), with the account identifier pseudonymised. A pseudonymised account marker that stops leftover sessions from recreating data is kept for up to 31 days. If another user sent you a transfer invitation you have not yet accepted, the email address on it is excluded from automatic deletion at account closure (until an invitation is accepted it is not linked to your account, so the address alone does not establish that it is yours, regardless of whether the address was confirmed). That address is removed by a daily cleanup within a day of the invitation lapsing (24 hours after creation) or being cancelled or declined. AI questions and answers are kept in the audit log only as HMAC hashes, follow the same retention rule, and there is no separate anonymisation schedule. If you choose Save to pet record on an AskAi answer, the question and answer text is stored in that pet daily-log notes and is kept and deleted like any daily log. Backups and SMS delivery records held by our processors remain until their own retention periods end and cannot be erased by us immediately.</p>
 </section>
 <section class="clause" id="en-4">
 <h2>4. Third parties</h2>
-<p>We do not sell or share data. With your separate consent, the following is routed through our server proxy to Google LLC (Gemini Developer API, located in the US) under non-training terms. AskAi sends your question as written, recent conversation history (up to 16 messages), the selected pet's species, species reference values, and retrieved literature excerpts; memorial letters send the pet's name and species, days together, first and last log dates, highest recorded weight, counts of daily and weight logs, photo count, the letter language and tone you chose, and the farewell words you wrote; if the generated letter is too short the same data is sent once more. Under the paid Gemini Developer API terms this is not used to improve Google products, and Google retains it for 55 days to detect and prevent abuse and policy violations. The country in which an individual request is processed cannot be specified in advance. RAG embedding uses the same Google Gemini model (gemini-embedding-001), so it adds no further recipient. Twilio receives your phone number for one-time SMS verification delivery only. Law enforcement only via warrant.</p>
+<p>We do not sell or share data. With your separate consent, the following is routed through our server proxy to Google LLC (Gemini Developer API, located in the US) under non-training terms. AskAi sends your question as written, recent conversation history (up to 16 messages), the selected pet's species, species reference values, and retrieved literature excerpts; memorial letters send the pet's name and species, days together, first and last log dates, highest recorded weight, counts of daily and weight logs, photo count, the letter language and tone you chose, and the farewell words you wrote; if the generated letter is too short the same data is sent once more. Under the paid Gemini Developer API terms this is not used to improve Google products, and Google retains it for 55 days to detect and prevent abuse and policy violations. The country in which an individual request is processed cannot be specified in advance. RAG embedding uses the same Google Gemini model (gemini-embedding-001), so it adds no further recipient. The legal basis for this overseas transfer is Article 28-8(1)(1) of the Personal Information Protection Act (separate consent); it happens each time you use an AI feature, as an encrypted transmission through our server proxy. Recipient contact: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA (privacy inquiries via the contact channel in the Google privacy policy). You can refuse the transfer on the consent screen shown when you first use an AI feature; if you do not consent or withdraw consent, every feature other than AI remains available, and you can withdraw at any time under the AI transfer consent item in Settings. Twilio receives your phone number for one-time SMS verification delivery only. Law enforcement only via warrant.</p>
 </section>
 <section class="clause" id="en-5">
 <h2>5. Processors</h2>
-<p>Supabase (data, auth and storage in the Seoul region; the server proxy is invoked with the Seoul region specified), Twilio (US, SMS verification dispatch), Google LLC (located in the US, processing country not specified in advance; AI responses and RAG embedding via our server proxy, after separate consent), Expo (EAS Build, US), GitHub (US, code only).</p>
+<p>We entrust processing to the following processors. Supabase, Inc. (US company, privacy@supabase.com): database, authentication, file storage and server proxy. The transferred items are all personal data in section 1 except the app update check items; they are stored in the Seoul region (Korea), the server proxy is invoked with the Seoul region specified, and processing happens over encrypted connections whenever you use the app. Retention follows section 3. Storage and routine processing stay in the Korean region, but because access from abroad by a foreign company (for example for incident handling) is itself processing we state Article 28-8(1)(3) of the Personal Information Protection Act (processing entrusted for the performance of our contract with you) as the basis. Twilio Inc. (US, privacy@twilio.com): SMS verification codes at sign-up and sign-in. The transferred item is your phone number, sent by an encrypted API call at the moment of dispatch (basis: Article 28-8(1)(3)); it is used until delivery completes, and the delivery records Twilio holds are deleted automatically within 30 days after our processing contract ends (Twilio data protection addendum); the criteria applied before then are published in the Twilio privacy policy. Expo (650 Industries, Inc., US, contact form at expo.dev/contact): app builds and the app update check server. The transferred items are a per-installation identifier and app version data, sent by an encrypted request on launch (basis: Article 28-8(1)(3)); they are used until the update check responds, and the retention of request records follows the criteria published in the Expo privacy policy; we keep no separate copy. How to refuse, and the effect: without Supabase processing the service cannot run, so you can stop it by deleting your account. The transfer to Twilio does not happen if you sign in with Google instead of phone verification. The transfer to Expo happens automatically every time the app launches, so to stop it you must uninstall the app; deleting your account alone does not stop it. The transfer to Google LLC is described in section 4. GitHub (US) holds source code only and no user personal data.</p>
 </section>
 <section class="clause" id="en-6">
 <h2>6. Security measures</h2>
-<p>TLS 1.3, AES-256 at rest, Row-Level Security, HMAC-SHA256 audit hashing, 24h signed URLs for photos, append-only audit log.</p>
+<p>TLS encryption in transit, encryption at rest (Supabase infrastructure), Row-Level Security, HMAC-SHA256 audit hashing, photos viewable only through 1-hour signed URLs, append-only audit log.</p>
 </section>
 <section class="clause" id="en-7">
 <h2>7. Your rights</h2>
-<p>Export (JSON/CSV/PDF), correct, delete, sign out. Korean users can file with the Personal Information Dispute Mediation Committee (1833-6972).</p>
+<p>In the app you can export your data (JSON/CSV/PDF), correct or delete pet data, delete daily logs, withdraw the AI transfer consent in Settings, and delete your account. Other access, correction, deletion and suspension requests go to the email in section 8; we verify your identity and handle them without undue delay. Korean users can file with the Personal Information Dispute Mediation Committee (1833-6972).</p>
 </section>
 <section class="clause" id="en-8">
 <h2>8. Privacy contact</h2>
-<p>TBD before GA. Inquiries: hanjukim0922@gmail.com.</p>
+<p>Privacy officer and contact point: the operator of Refuge (handled directly by the operator; there is no separate department). Send privacy questions, access, correction, deletion or suspension requests, consent withdrawals and complaints to the email below; we answer without undue delay. Email: hanjukim0922@gmail.com</p>
 </section>
-<p class="footnote">We will notify you in-app and by email of any material changes (7 days in advance for material changes).</p>
+<p class="footnote">This policy applies from 2026-09-02. When it changes, we post the changes and the effective date in the app and on the public page at least 7 days before they take effect.</p>
 <p class="meta"><a href="./account-deletion.html#en">How to request account deletion</a></p>
 </section>
 <footer>앱 내 개인정보 처리방침과 동일한 문안에서 생성되었습니다. / Generated from the same text as the in-app privacy policy.</footer>
